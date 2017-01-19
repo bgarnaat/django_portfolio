@@ -128,4 +128,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'MEDIA')
 MEDIA_URL = 'media'
 
 # Registration
-ACCOUNT_ACTIVATION_DAYS = 7
+ACCOUNT_ACTIVATION_DAYS = os.environ.get('ACTIVATION_DAYS')
